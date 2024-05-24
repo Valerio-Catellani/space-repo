@@ -18,6 +18,7 @@ body {
         rgba(0, 0, 0, 1) 65%
     );
     color: $font-white;
+    min-height: 150vh;
 }
 
 h2 {
@@ -92,14 +93,24 @@ header {
     box-shadow: 2px 2px 5px $shadow-primary-color;
 
     .active-color {
-        background-color: $background-secondary-color !important;
-        //box-shadow: 2px 2px 5px black;
+        background-color: $h2-color !important;
+    }
+
+    .active {
+        color: $h2-color !important;
+        font-weight: 700;
+        font-size: 1.5rem;
     }
 
     .window-movement {
         transform: translate(-50%, 10px) !important;
         transition: transform 0.5s;
         box-shadow: 2px 2px 2px $shadow-primary-color;
+        background: linear-gradient(
+            356deg,
+            rgba(194, 196, 201, 1) 0%,
+            rgba(0, 0, 0, 1) 67%
+        );
     }
 
     .border-opened-menu {

@@ -37,9 +37,6 @@
         </div>
     </nav>
 </header> --}}
-
-
-
 <header>
     <nav id='hype-custom-nav'
         class="fixed-header container d-flex margin-x-auto rounded-4 align-items-center justify-content-between">
@@ -48,15 +45,17 @@
                 <img class="img-fluid" src="/images/header_logo-removebg.png" alt="logo">
             </div>
             <div class="d-flex">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row  align-items-center gap-5">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row  align-items-center gap-5 text-white">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }} "
+                            aria-current="page" href="{{ route('home') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Page1</a>
+                        <a class="nav-link {{ Route::currentRouteName() == 'journeys.index' ? 'active' : '' }}"
+                            aria-current="page" href="{{ route('journeys.index') }}">Journeys</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Page2</a>
+                        <a class="nav-link" aria-current="page" href="#">Page2</a>
                     </li>
                 </ul>
             </div>
