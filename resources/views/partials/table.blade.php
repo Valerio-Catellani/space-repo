@@ -1,4 +1,4 @@
-<table class="table table-dark table-hover shadow my-5">
+<table class="table table-dark table-hover shadow my-5 hype-unselectable">
     <thead>
         <tr>
             <th scope="col">Codice astronave</th>
