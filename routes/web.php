@@ -1,6 +1,8 @@
 <?php
 
+use App\Models\Journey;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\JourneyController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
+
+
+Route::get('/journeys', [JourneyController::class, 'index'])->name('journeys.index');

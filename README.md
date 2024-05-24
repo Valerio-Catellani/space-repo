@@ -1,117 +1,28 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# BoolXTravel 🚀
 
-## Installazione Laravel
+Benvenuto nel repository di BoolXTravel, la tua agenzia di viaggi spaziali di fiducia!
 
-```bash
-cd your parent_folder_path
+## Chi Siamo
 
-composer create-project --prefer-dist laravel/laravel:^9.2 your_project_name_here
+BoolXTravel è un'agenzia di viaggi spaziali all'avanguardia che si dedica a rendere l'esplorazione dello spazio accessibile a tutti. Con una vasta gamma di destinazioni interplanetarie, offriamo un'esperienza di viaggio spaziale senza precedenti.
 
-cd your_project_name_here
+## Le nostre Destinazioni
 
-code . -r
+Offriamo viaggi verso una varietà di destinazioni spaziali tra cui Marte, la Luna, Venere e molto altro! Ogni viaggio è progettato per offrire un'esperienza unica e indimenticabile.
 
-php artisan serve
+## Sicurezza
 
-ctrl + c
+La sicurezza dei nostri passeggeri è la nostra massima priorità. Le nostre astronavi sono dotate delle più recenti tecnologie di sicurezza e i nostri equipaggi sono altamente addestrati per gestire qualsiasi situazione.
 
-```
-## Configurazione Laravel
-```bash
-composer require pacificdev/laravel_9_preset
+## Prenotazioni
 
-php artisan preset:ui bootstrap
+Le prenotazioni sono ora aperte! Contattaci per saperne di più sulle nostre offerte di viaggio e per prenotare il tuo prossimo viaggio spaziale.
 
-npm install
+## Contatti
 
-npm install --save @fortawesome/fontawesome-free
+Per ulteriori informazioni, non esitare a contattarci. Siamo qui per rispondere a tutte le tue domande.
 
-#in vite config aggiungo agli alias
-'~@fortawesome': path.resolve(__dirname, 'node_modules/@fortawesome'),
+Grazie per aver scelto BoolXTravel. Non vediamo l'ora di portarti nello spazio!
 
-#copio la cartella dei webfont e se voglio la rinomino
-
-#installo dbal per migration e seeder
-composer require doctrine/dbal:^3.3
-
-
-#comandi git
-
-git init
-git add .
-git commit -m "first commit"
-git branch -M main
-git remote add origin your_git_url 
-git push -u origin main
-
-
-```
-## Clono progetto da github 
-
-<<<<<<< HEAD
-```bash
-# copio file .env.example e lo rinomino in .env
-
-composer install
-
-php artisan key:generate
-
-npm install
-
-# creo il database da phpmyadmin
-
-# inserisco i dati per il collegamento al db in env
-
-#creo migration es.
-php artisan make:migration create_nome_tabella_table
-php artisan make:migration update_users_table --table=users
-php artisan make:migration add_phone_number_to_users_table
-
-#lanciare migration
-php artisan migrate
-
-#revert migration
-php artisan migrate:rollback
-
-#creare il model (necessario per salvare dati su db con seeder)
-php artisan make:model Nome
-
-#popolare il db  es.
-php artisan make:seeder UsersTableSeeder
-
-php artisan db:seed --class=UsersTableSeeder
-
-# preparo le rotte file web.php es. 
-Route::get('/books', [BookController::class, 'index'])->name('books.index');
-
-# creo controller
-php artisan make:controller NomeController
-
-
-# creo le views relative
-
-```
-=======
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-
-
-HOW TO USE:
-- fare copia del file env.example
-- rinominare in .env
-- composer install
-- php artisan key:generate
-- npm install
-- php artisan serve
-- npm run dev
-
-PER PULIRE:
-- composer dump-autoload
-- php artisan cache:clear
-- php artisan config:cache
+**BoolXTravel - Il tuo gateway per l'universo!**

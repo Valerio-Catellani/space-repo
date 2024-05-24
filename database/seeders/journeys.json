@@ -1,0 +1,202 @@
+[
+    {
+        "pianeta_di_partenza": "Terra",
+        "pianeta_di_destinazione": "Marte",
+        "data_di_partenza": "2024-02-10",
+        "data_di_arrivo": "2024-07-31",
+        "costo_biglietto": 1000.0,
+        "codice_astronave": "AS-0000",
+        "descrizione_viaggio": "Viaggio interplanetario dal pianeta Terra al pianeta Marte.",
+        "nome_azienda": "SpaceX"
+    },
+    {
+        "pianeta_di_partenza": "Marte",
+        "pianeta_di_destinazione": "Giove",
+        "data_di_partenza": "2024-04-15",
+        "data_di_arrivo": "2025-04-25",
+        "costo_biglietto": 1473.68,
+        "codice_astronave": "AS-0001",
+        "descrizione_viaggio": "Viaggio interplanetario dal pianeta Marte al pianeta Giove.",
+        "nome_azienda": "Blue Origin"
+    },
+    {
+        "pianeta_di_partenza": "Giove",
+        "pianeta_di_destinazione": "Saturno",
+        "data_di_partenza": "2024-12-27",
+        "data_di_arrivo": "2025-11-24",
+        "costo_biglietto": 1947.37,
+        "codice_astronave": "AS-0002",
+        "descrizione_viaggio": "Viaggio interplanetario dal pianeta Giove al pianeta Saturno.",
+        "nome_azienda": "Virgin Galactic"
+    },
+    {
+        "pianeta_di_partenza": "Saturno",
+        "pianeta_di_destinazione": "Venere",
+        "data_di_partenza": "2024-02-06",
+        "data_di_arrivo": "2024-05-27",
+        "costo_biglietto": 2421.05,
+        "codice_astronave": "AS-0003",
+        "descrizione_viaggio": "Viaggio interplanetario dal pianeta Saturno al pianeta Venere.",
+        "nome_azienda": "NASA"
+    },
+    {
+        "pianeta_di_partenza": "Venere",
+        "pianeta_di_destinazione": "Mercurio",
+        "data_di_partenza": "2024-05-29",
+        "data_di_arrivo": "2024-12-06",
+        "costo_biglietto": 2894.74,
+        "codice_astronave": "AS-0004",
+        "descrizione_viaggio": "Viaggio interplanetario dal pianeta Venere al pianeta Mercurio.",
+        "nome_azienda": "Roscosmos"
+    },
+    {
+        "pianeta_di_partenza": "Mercurio",
+        "pianeta_di_destinazione": "Nettuno",
+        "data_di_partenza": "2024-09-25",
+        "data_di_arrivo": "2025-03-16",
+        "costo_biglietto": 3368.42,
+        "codice_astronave": "AS-0005",
+        "descrizione_viaggio": "Viaggio interplanetario dal pianeta Mercurio al pianeta Nettuno.",
+        "nome_azienda": "CNSA"
+    },
+    {
+        "pianeta_di_partenza": "Nettuno",
+        "pianeta_di_destinazione": "Urano",
+        "data_di_partenza": "2024-08-21",
+        "data_di_arrivo": "2024-12-13",
+        "costo_biglietto": 3842.11,
+        "codice_astronave": "AS-0006",
+        "descrizione_viaggio": "Viaggio interplanetario dal pianeta Nettuno al pianeta Urano.",
+        "nome_azienda": "SpaceX"
+    },
+    {
+        "pianeta_di_partenza": "Urano",
+        "pianeta_di_destinazione": "Terra",
+        "data_di_partenza": "2024-03-22",
+        "data_di_arrivo": "2024-10-27",
+        "costo_biglietto": 4315.79,
+        "codice_astronave": "AS-0007",
+        "descrizione_viaggio": "Viaggio interplanetario dal pianeta Urano al pianeta Terra.",
+        "nome_azienda": "Blue Origin"
+    },
+    {
+        "pianeta_di_partenza": "Terra",
+        "pianeta_di_destinazione": "Marte",
+        "data_di_partenza": "2024-11-08",
+        "data_di_arrivo": "2025-03-20",
+        "costo_biglietto": 4789.47,
+        "codice_astronave": "AS-0008",
+        "descrizione_viaggio": "Viaggio interplanetario dal pianeta Terra al pianeta Marte.",
+        "nome_azienda": "Virgin Galactic"
+    },
+    {
+        "pianeta_di_partenza": "Marte",
+        "pianeta_di_destinazione": "Giove",
+        "data_di_partenza": "2024-09-03",
+        "data_di_arrivo": "2025-03-21",
+        "costo_biglietto": 5263.16,
+        "codice_astronave": "AS-0009",
+        "descrizione_viaggio": "Viaggio interplanetario dal pianeta Marte al pianeta Giove.",
+        "nome_azienda": "NASA"
+    },
+    {
+        "pianeta_di_partenza": "Giove",
+        "pianeta_di_destinazione": "Saturno",
+        "data_di_partenza": "2024-02-16",
+        "data_di_arrivo": "2024-07-14",
+        "costo_biglietto": 5736.84,
+        "codice_astronave": "AS-0010",
+        "descrizione_viaggio": "Viaggio interplanetario dal pianeta Giove al pianeta Saturno.",
+        "nome_azienda": "Roscosmos"
+    },
+    {
+        "pianeta_di_partenza": "Saturno",
+        "pianeta_di_destinazione": "Venere",
+        "data_di_partenza": "2024-12-08",
+        "data_di_arrivo": "2025-06-11",
+        "costo_biglietto": 6210.53,
+        "codice_astronave": "AS-0011",
+        "descrizione_viaggio": "Viaggio interplanetario dal pianeta Saturno al pianeta Venere.",
+        "nome_azienda": "CNSA"
+    },
+    {
+        "pianeta_di_partenza": "Venere",
+        "pianeta_di_destinazione": "Mercurio",
+        "data_di_partenza": "2024-10-13",
+        "data_di_arrivo": "2025-06-30",
+        "costo_biglietto": 6684.21,
+        "codice_astronave": "AS-0012",
+        "descrizione_viaggio": "Viaggio interplanetario dal pianeta Venere al pianeta Mercurio.",
+        "nome_azienda": "SpaceX"
+    },
+    {
+        "pianeta_di_partenza": "Mercurio",
+        "pianeta_di_destinazione": "Nettuno",
+        "data_di_partenza": "2024-05-01",
+        "data_di_arrivo": "2024-09-23",
+        "costo_biglietto": 7157.89,
+        "codice_astronave": "AS-0013",
+        "descrizione_viaggio": "Viaggio interplanetario dal pianeta Mercurio al pianeta Nettuno.",
+        "nome_azienda": "Blue Origin"
+    },
+    {
+        "pianeta_di_partenza": "Nettuno",
+        "pianeta_di_destinazione": "Urano",
+        "data_di_partenza": "2024-03-03",
+        "data_di_arrivo": "2024-07-22",
+        "costo_biglietto": 7631.58,
+        "codice_astronave": "AS-0014",
+        "descrizione_viaggio": "Viaggio interplanetario dal pianeta Nettuno al pianeta Urano.",
+        "nome_azienda": "Virgin Galactic"
+    },
+    {
+        "pianeta_di_partenza": "Urano",
+        "pianeta_di_destinazione": "Terra",
+        "data_di_partenza": "2024-08-25",
+        "data_di_arrivo": "2025-04-03",
+        "costo_biglietto": 8105.26,
+        "codice_astronave": "AS-0015",
+        "descrizione_viaggio": "Viaggio interplanetario dal pianeta Urano al pianeta Terra.",
+        "nome_azienda": "NASA"
+    },
+    {
+        "pianeta_di_partenza": "Terra",
+        "pianeta_di_destinazione": "Marte",
+        "data_di_partenza": "2024-06-13",
+        "data_di_arrivo": "2025-04-08",
+        "costo_biglietto": 8578.95,
+        "codice_astronave": "AS-0016",
+        "descrizione_viaggio": "Viaggio interplanetario dal pianeta Terra al pianeta Marte.",
+        "nome_azienda": "Roscosmos"
+    },
+    {
+        "pianeta_di_partenza": "Marte",
+        "pianeta_di_destinazione": "Giove",
+        "data_di_partenza": "2024-02-21",
+        "data_di_arrivo": "2025-07-21",
+        "costo_biglietto": 9052.63,
+        "codice_astronave": "AS-0017",
+        "descrizione_viaggio": "Viaggio interplanetario dal pianeta Marte al pianeta Giove.",
+        "nome_azienda": "CNSA"
+    },
+    {
+        "pianeta_di_partenza": "Giove",
+        "pianeta_di_destinazione": "Saturno",
+        "data_di_partenza": "2024-05-07",
+        "data_di_arrivo": "2024-10-04",
+        "costo_biglietto": 9526.32,
+        "codice_astronave": "AS-0018",
+        "descrizione_viaggio": "Viaggio interplanetario dal pianeta Giove al pianeta Saturno.",
+        "nome_azienda": "SpaceX"
+    },
+    {
+        "pianeta_di_partenza": "Saturno",
+        "pianeta_di_destinazione": "Venere",
+        "data_di_partenza": "2024-04-15",
+        "data_di_arrivo": "2024-09-12",
+        "costo_biglietto": 10000.0,
+        "codice_astronave": "AS-0019",
+        "descrizione_viaggio": "Viaggio interplanetario dal pianeta Saturno al pianeta Venere.",
+        "nome_azienda": "Blue Origin"
+    }
+]
