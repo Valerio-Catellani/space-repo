@@ -6,7 +6,7 @@
 @section('content')
     @include('partials.jumbo')
     <main>
-        <section id="about_us">
+        <section id="about_us" class="parallax">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-6 d-flex flex-column justify-content-center p-3">
@@ -46,7 +46,7 @@
                         <div id="animated" class="w-100"></div>
                     </div>
 
-                    <div class="col-12 col-lg-6 d-flex flex-column justify-content-center p-3">
+                    <div class="col-12 col-lg-6 d-flex flex-column justify-content-center p-3 parallax2">
                         <h2 class="py-4 ">Che cosa offriamo </h2>
                         <ul>
                             <li>
