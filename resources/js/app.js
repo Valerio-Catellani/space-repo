@@ -87,6 +87,10 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('hype-nav-login-button').addEventListener('click', function (event) {
             headerHandler.toggleMenu('hype-nav-login-bar-input', event.currentTarget);
         });
+
+        document.getElementById('hype-nav-kebab-button').addEventListener('click', function (event) {
+            headerHandler.toggleMenu('hype-nav-kebab-menu', event.currentTarget);
+        });
     }
 
     // Esegui l'animazione della sfera solo sulla pagina specifica
