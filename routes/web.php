@@ -21,3 +21,4 @@ Route::get('/', function () {
 
 
 Route::get('/journeys', [JourneyController::class, 'index'])->name('journeys.index');
+Route::get('/journeys/{id}', [JourneyController::class, 'show'])->name('journeys.show');

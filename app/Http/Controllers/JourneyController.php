@@ -14,4 +14,10 @@ class JourneyController extends Controller
 
         return view('journeys.index', compact('journeys'));
     }
+
+    public function show($id)
+    {
+        $journey = Journey::findOrFail($id);
+        return view('journeys.show', compact('journey'));
+    }
 }

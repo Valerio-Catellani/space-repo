@@ -105,7 +105,7 @@ function initSphereAnimation() {
     const scene = new THREE.Scene();
 
     // Aggiungiamo una sfera
-    const geometry = new THREE.SphereGeometry(1, 32, 32);
+    const geometry = new THREE.SphereGeometry(1, 32, 90);
     const material = new THREE.MeshPhongMaterial({ color: 0xB3A288, transparent: true, opacity: 0.8 });
     const textureLoader = new THREE.TextureLoader();
     const texture = textureLoader.load('/images/jup.jpg');

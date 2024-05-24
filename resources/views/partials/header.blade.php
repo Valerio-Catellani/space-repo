@@ -76,7 +76,7 @@
                 </div>
             </div>
             <div id='hype-nav-kebab-menu'
-                class=" bar-input active-color rounded-bottom-4 position-absolute container d-none">
+                class=" bar-input active-color rounded-bottom-4 position-absolute container d-none d-lg-none">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-column gap-1">
                     <li class="nav-item">
                         <a class="nav-link {{ Route::currentRouteName() == 'home' ? 'active-kebab' : '' }} "
