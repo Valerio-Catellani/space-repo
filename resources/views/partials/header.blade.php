@@ -40,7 +40,7 @@
 <header>
     <nav id='hype-custom-nav'
         class="fixed-header container d-flex margin-x-auto rounded-4 align-items-center justify-content-between">
-        <div class="d-flex">
+        <div class="d-flex p-1">
             <div class="img-container py-1">
                 <img class="img-fluid" src="/images/header_logo-removebg.png" alt="logo">
             </div>

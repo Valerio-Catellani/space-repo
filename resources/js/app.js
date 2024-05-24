@@ -77,7 +77,6 @@ class HypeNav {
 document.addEventListener('DOMContentLoaded', function () {
     if (document.getElementById('hype-custom-nav')) {
         const headerHandler = new HypeNav(document.getElementById('hype-custom-nav'));
-        console.log('javascript ok');
 
         // Aggiungi un listener per il clic sul pulsante di ricerca
         document.getElementById('hype-nav-search-button').addEventListener('click', function (event) {
@@ -116,8 +115,11 @@ function initSphereAnimation() {
     scene.add(light);
 
     // dimensioni pesonalizzate
-    const width = 700;
+    const container = document.getElementById('animated');
+    const width = container.offsetWidth;
     const height = 700;
+    // const width = 700;
+    // const height = 700;
 
     // Creiamo la telecamera
     const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
