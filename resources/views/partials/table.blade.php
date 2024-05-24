@@ -13,7 +13,7 @@
     <tbody>
         @foreach ($journeys as $journey)
             <tr>
-                <td>{{ $journey->codice_astronave }}</td>
+                <td><a href="{{ route('journeys.show', $journey->id) }}">{{ $journey->codice_astronave }}</a></td>
                 <td>{{ $journey->nome_azienda }}</td>
                 <td>{{ $journey->pianeta_di_partenza }}</td>
                 <td>{{ $journey->pianeta_di_destinazione }}</td>

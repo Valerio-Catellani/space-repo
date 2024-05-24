@@ -43,6 +43,14 @@ section {
 }
 
 // utilities
+
+.bg-main-cards {
+    background: linear-gradient(
+        356deg,
+        rgba(194, 196, 201, 1) 0%,
+        rgba(0, 0, 0, 1) 67%
+    );
+}
 .debug {
     border: 1px solid red;
 }

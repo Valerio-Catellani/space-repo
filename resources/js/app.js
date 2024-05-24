@@ -95,11 +95,72 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Esegui l'animazione della sfera solo sulla pagina specifica
     if (document.getElementById('animated')) {
-        initSphereAnimation();
+        const container = document.getElementById('animated');
+        planet('/images/jup.jpg', container);
     }
+
+    if (document.getElementById('animated-field')) {
+        document.querySelectorAll('.pianeta').forEach((pianeta) => {
+            //console.log(pianeta.id);
+            planet(`/images/planet_details/${pianeta.id}.jpg`, pianeta);
+        });
+    }
+
+
 });
 
-function initSphereAnimation() {
+// function createSphereWithAura() {
+//     const scene = new THREE.Scene();
+
+//     // Sfera principale
+//     const geometry = new THREE.SphereGeometry(1, 32, 32);
+//     const material = new THREE.MeshPhongMaterial({ color: 0xffffff });
+//     const sphere = new THREE.Mesh(geometry, material);
+//     scene.add(sphere);
+
+//     // Aura intorno alla sfera
+//     const auraGeometry = new THREE.SphereGeometry(1.1, 32, 32); // Slightly larger radius
+//     const auraMaterial = new THREE.MeshBasicMaterial({ color: 0x00ffff, transparent: true, opacity: 0.5 });
+//     const aura = new THREE.Mesh(auraGeometry, auraMaterial);
+//     scene.add(aura);
+
+//     // Luce
+//     const light = new THREE.DirectionalLight(0xffffff, 1);
+//     light.position.set(5, 5, 5);
+//     scene.add(light);
+
+//     // Dimensioni personalizzate
+//     const container = document.getElementById('container');
+//     const width = container.offsetWidth;
+//     const height = 500;
+
+//     // Telecamera
+//     const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
+//     camera.position.z = 3;
+
+//     // Renderer
+//     const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+//     renderer.setSize(width, height);
+//     container.appendChild(renderer.domElement);
+
+//     // Animazione
+//     function animate() {
+//         requestAnimationFrame(animate);
+//         sphere.rotation.x += 0.01;
+//         sphere.rotation.y += 0.01;
+//         aura.rotation.x += 0.01; // L'aura ruota insieme alla sfera principale
+//         aura.rotation.y += 0.01;
+//         renderer.render(scene, camera);
+//     }
+
+//     animate();
+// }
+
+
+
+
+
+function planet(texturePlanet, element) {
 
     // Creiamo la scena
     const scene = new THREE.Scene();
@@ -108,7 +169,7 @@ function initSphereAnimation() {
     const geometry = new THREE.SphereGeometry(1, 32, 90);
     const material = new THREE.MeshPhongMaterial({ color: 0xB3A288, transparent: true, opacity: 0.8 });
     const textureLoader = new THREE.TextureLoader();
-    const texture = textureLoader.load('/images/jup.jpg');
+    const texture = textureLoader.load(texturePlanet);
     material.map = texture;
     const sphere = new THREE.Mesh(geometry, material);
     scene.add(sphere);
@@ -119,7 +180,7 @@ function initSphereAnimation() {
     scene.add(light);
 
     // dimensioni pesonalizzate
-    const container = document.getElementById('animated');
+    const container = element
     const width = container.offsetWidth;
     const height = 700;
     // const width = 700;
@@ -132,7 +193,7 @@ function initSphereAnimation() {
     // Creiamo il renderer
     const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
     renderer.setSize(width, height);
-    const animated = document.getElementById('animated');
+    const animated = element
     animated.appendChild(renderer.domElement);
 
     // Animazione: fai ruotare la sfera
@@ -145,4 +206,5 @@ function initSphereAnimation() {
 
     // Avviamo l'animazione
     animate();
+
 }
