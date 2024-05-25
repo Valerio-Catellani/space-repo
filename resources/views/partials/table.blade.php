@@ -1,4 +1,4 @@
-<table class="table table-dark table-hover shadow my-5 hype-unselectable">
+<table class="table table-dark table-hover shadow my-5 hype-unselectable table-clickable">
     <thead>
         <tr>
             <th scope="col">Codice astronave</th>
@@ -13,13 +13,15 @@
     <tbody>
         @foreach ($journeys as $journey)
             <tr>
-                <td><a href="{{ route('journeys.show', $journey->id) }}">{{ $journey->codice_astronave }}</a></td>
-                <td>{{ $journey->nome_azienda }}</td>
-                <td>{{ $journey->pianeta_di_partenza }}</td>
-                <td>{{ $journey->pianeta_di_destinazione }}</td>
-                <td>{{ $journey->data_di_partenza }}</td>
-                <td>{{ $journey->data_di_arrivo }}</td>
-                <td>{{ $journey->costo_biglietto . ' §' }}</td>
+                <td><a href="{{ route('journeys.show', $journey->id) }}">{{ $journey->codice_astronave }} </a></td>
+                <td><a href="{{ route('journeys.show', $journey->id) }}">{{ $journey->nome_azienda }}</a></td>
+                <td><a href="{{ route('journeys.show', $journey->id) }}">{{ $journey->pianeta_di_partenza }}</a></td>
+                <td><a href="{{ route('journeys.show', $journey->id) }}">{{ $journey->pianeta_di_destinazione }}</a>
+                </td>
+                <td><a href="{{ route('journeys.show', $journey->id) }}">{{ $journey->data_di_partenza }}</a></td>
+                <td><a href="{{ route('journeys.show', $journey->id) }}">{{ $journey->data_di_arrivo }}</a></td>
+                <td><a href="{{ route('journeys.show', $journey->id) }}">{{ $journey->costo_biglietto . ' §' }}</a>
+                </td>
             </tr>
         @endforeach
     </tbody>

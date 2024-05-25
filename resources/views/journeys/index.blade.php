@@ -4,11 +4,14 @@
 
 
 @section('content')
-<div id="solar_sistem" style="padding-top:50px">edwee</div>
-    <main style="padding-top:150px" >
-        
+    <div id="solar_sistem">
+    </div>
+    <main>
+
         <div class="container hype-unselectable">
-            <h2 class="py-4">Tutti i Viaggi</h2>
+            <div class="d-flex justify-content-center mt-3">
+                <h2 class="py-4 hype-text-shadow">Tutti i Viaggi</h2>
+            </div>
             @include('partials.table', $journeys)
         </div>
     </main>
