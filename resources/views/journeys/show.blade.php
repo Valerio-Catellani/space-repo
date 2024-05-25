@@ -26,14 +26,14 @@
             <h4>Dettagli viaggio</h4>
             <div id="animated-field" class="row gx-5 align-items-center">
                 <div class="col-lg-6">
-                    <h3 class="text-center display-3 fw-bold hype-text-shadow">{{ $journey->pianeta_di_partenza }}</h3>
+                    <h3 class="text-center display-3 fw-bold hype-text-shadow">{{ $first_planet->nome }}</h3>
                     <p class="text-center">(partenza)</p>
-                    @include('partials.planet-card', ['pianeta' => $journey->pianeta_di_partenza])
+                    @include('partials.planet-card', ['pianeta' => $first_planet])
                 </div>
                 <div class="col-lg-6">
-                    <h3 class="text-center display-3 fw-bold hype-text-shadow">{{ $journey->pianeta_di_destinazione }}</h3>
+                    <h3 class="text-center display-3 fw-bold hype-text-shadow">{{ $last_planet->nome }}</h3>
                     <p class="text-center">(destinazione)</p>
-                    @include('partials.planet-card', ['pianeta' => $journey->pianeta_di_destinazione])
+                    @include('partials.planet-card', ['pianeta' => $last_planet])
                 </div>
             </div>
             <table class="table table-dark shadow my-5 hype-unselectable w-50">

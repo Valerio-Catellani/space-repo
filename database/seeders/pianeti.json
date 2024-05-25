@@ -1,0 +1,102 @@
+{
+    "Giove": {
+        "Diametro_equatoriale": "142984 km",
+        "Diametro_polare": "133709 km",
+        "Volume": "1.4313 x 10^24 m^3",
+        "Massa": "1.8986 x 10^27 kg",
+        "Densità_media": "1.326 g/cm^3",
+        "Velocità_di_fuga": "59500 m/s",
+        "Temperatura_superficiale": "-121°C (media)",
+        "Pressione_atmosferica": "20 - 200 kPa"
+    },
+    "Marte": {
+        "Diametro_equatoriale": "6792 km",
+        "Diametro_polare": "6752 km",
+        "Volume": "1.6318 x 10^11 km^3",
+        "Massa": "6.39 x 10^23 kg",
+        "Densità_media": "3.934 g/cm^3",
+        "Velocità_di_fuga": "5027 m/s",
+        "Temperatura_superficiale": "-63°C (media)",
+        "Pressione_atmosferica": "0.636 kPa (media)"
+    },
+    "Mercurio": {
+        "Diametro_equatoriale": "4879.4 km",
+        "Diametro_polare": "4879.4 km",
+        "Volume": "6.083 x 10^10 km^3",
+        "Massa": "3.3011 x 10^23 kg",
+        "Densità_media": "5.427 g/cm^3",
+        "Velocità_di_fuga": "4.3 km/s",
+        "Temperatura_superficiale": "-173°C (min), 167°C (media), 427°C (max)",
+        "Pressione_atmosferica": "Praticamente inesistente"
+    },
+    "Nettuno": {
+        "Diametro_equatoriale": "49528 km",
+        "Diametro_polare": "48632 km",
+        "Volume": "6.254 x 10^13 km^3",
+        "Massa": "1.0243 x 10^26 kg",
+        "Densità_media": "1.638 g/cm^3",
+        "Velocità_di_fuga": "23500 m/s",
+        "Temperatura_superficiale": "-220°C (media)",
+        "Pressione_atmosferica": "Non disponibile"
+    },
+    "Plutone": {
+        "Diametro_equatoriale": "2376.6 km",
+        "Diametro_polare": "2376.6 km",
+        "Volume": "Non disponibile",
+        "Massa": "1.303 x 10^22 kg",
+        "Densità_media": "1.854 g/cm^3",
+        "Velocità_di_fuga": "1230 m/s",
+        "Temperatura_superficiale": "-223°C (media)",
+        "Pressione_atmosferica": "1 Pa (max)"
+    },
+    "Saturno": {
+        "Diametro_equatoriale": "120536 km",
+        "Diametro_polare": "108728 km",
+        "Volume": "8.27 x 10^14 km^3",
+        "Massa": "5.6834 x 10^26 kg",
+        "Densità_media": "0.687 g/cm^3",
+        "Velocità_di_fuga": "35500 m/s",
+        "Temperatura_superficiale": "-139°C (media)",
+        "Pressione_atmosferica": "Non disponibile"
+    },
+    "Sole": {
+        "Diametro_equatoriale": "1.391 x 10^6 km",
+        "Diametro_polare": "1.391 x 10^6 km",
+        "Volume": "Non disponibile",
+        "Massa": "1.989 x 10^30 kg",
+        "Densità_media": "1.41 g/cm^3",
+        "Velocità_di_fuga": "617.7 km/s",
+        "Temperatura_superficiale": "5500°C (media)",
+        "Pressione_atmosferica": "Non disponibile"
+    },
+    "Terra": {
+        "Diametro_equatoriale": "12756 km",
+        "Diametro_polare": "12713.6 km",
+        "Volume": "1.08321 x 10^12 km^3",
+        "Massa": "5.97237 x 10^24 kg",
+        "Densità_media": "5.515 g/cm^3",
+        "Velocità_di_fuga": "11186 m/s",
+        "Temperatura_superficiale": "14°C (media)",
+        "Pressione_atmosferica": "1013.25 hPa (media al livello del mare)"
+    },
+    "Urano": {
+        "Diametro_equatoriale": "51118 km",
+        "Diametro_polare": "49946 km",
+        "Volume": "6.833 x 10^13 km^3",
+        "Massa": "8.6810 x 10^25 kg",
+        "Densità_media": "1.27 g/cm^3",
+        "Velocità_di_fuga": "21300 m/s",
+        "Temperatura_superficiale": "-220°C (media)",
+        "Pressione_atmosferica": "Non disponibile"
+    },
+    "Venere": {
+        "Diametro_equatoriale": "12103 km",
+        "Diametro_polare": "12103 km",
+        "Volume": "9.28 x 10^11 km^3",
+        "Massa": "4.869 x 10^24 kg",
+        "Densità_media": "5.243 g/cm^3",
+        "Velocità_di_fuga": "10360 m/s",
+        "Temperatura_superficiale": "464°C (media)",
+        "Pressione_atmosferica": "92 bar (media)"
+    }
+}

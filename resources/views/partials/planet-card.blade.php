@@ -1,21 +1,24 @@
 <div class="p-2 rounded-3 overflow-hidden shadow">
-    <div class="card bg-main-cards">
-        <div id="{{ $pianeta }}" class="pianeta w-100"></div>
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the
-                bulk of the card's content.</p>
-        </div>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
-            <li class="list-group-item">A third item</li>
-            <li class="list-group-item">A third item</li>
-        </ul>
-        {{-- <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-            </div> --}}
+    <div class=" pb-0">
+        <div id="{{ $pianeta->nome }}" class="pianeta w-100"></div>
+        <table class="table table-dark table-hover shadow my-5 hype-unselectable">
+            <thead>
+                <tr>
+                    <th scope="col">Informazioni</th>
+                    <th scope="col">Dati</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach ($pianeta->getAttributes() as $element => $value)
+                    @if ($element !== 'id' && $element !== 'created_at' && $element !== 'updated_at')
+                        <tr>
+                            <td>{{ ucwords(str_replace('_', ' ', $element)) }}</td>
+                            <td>{{ $value }}</td>
+                        </tr>
+                    @endif
+                @endforeach
+            </tbody>
+        </table>
+
     </div>
 </div>
