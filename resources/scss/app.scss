@@ -43,6 +43,10 @@ section {
     padding-top: 30px;
 }
 
+canvas {
+    width: 100% !important;
+}
+
 // utilities
 
 .bg-main-cards {
@@ -61,13 +65,15 @@ header {
     background: rgb(194, 196, 201);
     background: $background-gradient;
     box-shadow: 2px 2px 5px $shadow-primary-color;
+    display: flex;
+    justify-content: center;
 
     .active-color {
         background-color: $h2-color !important;
     }
 
     .window-movement {
-        transform: translate(-50%, 10px) !important;
+        transform: translate(0%, 10px) !important;
         transition: transform 0.5s;
         box-shadow: 2px 2px 2px $shadow-primary-color;
         background: linear-gradient(
@@ -86,9 +92,9 @@ header {
         height: 100px;
         position: fixed;
         top: 0;
-        left: 50%;
+        // left: 50%;
         z-index: 1000;
-        transform: translateX(-50%);
+        //transform: translateX(-50%);
         transition: transform 0.3s ease-out;
         background-color: inherit;
         color: $text-primary-color !important;
@@ -190,8 +196,16 @@ header {
         }
     }
 }
+//************************   All Journeys ** ******************************//
 
-//************************   SHOW DETAILS ** ******************************////////
+#all-journeys {
+    .gradient-in {
+        height: 100px;
+        background: linear-gradient(to bottom, black 50%, transparent);
+    }
+}
+
+//************************   SHOW DETAILS ** ******************************//
 
 .show-details {
     h2 {
@@ -344,10 +358,11 @@ header {
 }
 
 /************************ FOOOTER *****************************/
+
 footer {
     background: $background-gradient;
     position: relative;
-    background: linear-gradient(to top, $background-gradient 75%, transparent);
+    background: linear-gradient(to top, black 75%, transparent);
 
     ul {
         margin: 0px;
@@ -360,7 +375,7 @@ footer {
     }
 
     .single-cta i {
-        color: WHITE;
+        color: $h2-color;
         font-size: 30px;
         float: left;
         margin-top: 8px;
@@ -372,14 +387,14 @@ footer {
     }
 
     .cta-text h4 {
-        color: $text-primary-color;
+        color: $h2-color;
         font-size: 20px;
         font-weight: 600;
         margin-bottom: 2px;
     }
 
     .cta-text span {
-        color: $text-primary-color;
+        color: $text-secondary-color;
         font-size: 15px;
     }
 
@@ -402,13 +417,14 @@ footer {
     }
 
     .footer-logo img {
-        max-width: 200px;
+        width: 300px;
+        transform: translateX(-10%);
     }
 
     .footer-text p {
         margin-bottom: 14px;
         font-size: 14px;
-        color: $text-primary-color;
+        color: $text-tertiary-color;
         line-height: 28px;
     }
 
@@ -462,7 +478,7 @@ footer {
         bottom: -15px;
         height: 2px;
         width: 50px;
-        background: WHITE;
+        background: $h2-color;
     }
 
     .footer-widget ul li {
@@ -473,11 +489,12 @@ footer {
     }
 
     .footer-widget ul li a:hover {
-        color: WHITE;
+        color: $h2-color;
     }
 
     .footer-widget ul li a {
-        color: #878787;
+        color: $text-tertiary-color;
+        text-decoration: none;
         text-transform: capitalize;
     }
 
@@ -499,12 +516,12 @@ footer {
         right: 0;
         background: WHITE;
         padding: 13px 20px;
-        border: 1px solid WHITE;
+        border: 1px solid $h2-color;
         top: 0;
     }
 
     .subscribe-form button i {
-        color: #fff;
+        color: $h2-color;
         font-size: 22px;
         transform: rotate(-6deg);
     }

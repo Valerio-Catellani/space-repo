@@ -1,5 +1,5 @@
-<div class="p-2 rounded-3 overflow-hidden shadow">
-    <div class=" pb-0">
+<div class="p-2 rounded-3 overflow-hidden overflow-hidden">
+    <div class=" pb-0 hype-unselectable">
         <div id="{{ $pianeta->nome }}" class="pianeta w-100"></div>
         <table class="table table-dark table-hover shadow my-5 hype-unselectable">
             <thead>

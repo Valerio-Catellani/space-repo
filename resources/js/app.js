@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Esegui l'animazione della sfera solo sulla pagina specifica
     if (document.getElementById('animated')) {
         const container = document.getElementById('animated');
-        planet('/images/jup.jpg', container);
+        planet('/images/solar_sistem/earth.jpg', container);
     }
 
     if (document.getElementById('animated-field')) {
@@ -111,54 +111,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-// function createSphereWithAura() {
-//     const scene = new THREE.Scene();
-
-//     // Sfera principale
-//     const geometry = new THREE.SphereGeometry(1, 32, 32);
-//     const material = new THREE.MeshPhongMaterial({ color: 0xffffff });
-//     const sphere = new THREE.Mesh(geometry, material);
-//     scene.add(sphere);
-
-//     // Aura intorno alla sfera
-//     const auraGeometry = new THREE.SphereGeometry(1.1, 32, 32); // Slightly larger radius
-//     const auraMaterial = new THREE.MeshBasicMaterial({ color: 0x00ffff, transparent: true, opacity: 0.5 });
-//     const aura = new THREE.Mesh(auraGeometry, auraMaterial);
-//     scene.add(aura);
-
-//     // Luce
-//     const light = new THREE.DirectionalLight(0xffffff, 1);
-//     light.position.set(5, 5, 5);
-//     scene.add(light);
-
-//     // Dimensioni personalizzate
-//     const container = document.getElementById('container');
-//     const width = container.offsetWidth;
-//     const height = 500;
-
-//     // Telecamera
-//     const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
-//     camera.position.z = 3;
-
-//     // Renderer
-//     const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
-//     renderer.setSize(width, height);
-//     container.appendChild(renderer.domElement);
-
-//     // Animazione
-//     function animate() {
-//         requestAnimationFrame(animate);
-//         sphere.rotation.x += 0.01;
-//         sphere.rotation.y += 0.01;
-//         aura.rotation.x += 0.01; // L'aura ruota insieme alla sfera principale
-//         aura.rotation.y += 0.01;
-//         renderer.render(scene, camera);
-//     }
-
-//     animate();
-// }
-
-
 
 
 
@@ -168,8 +120,8 @@ function planet(texturePlanet, element) {
     const scene = new THREE.Scene();
 
     // Aggiungiamo una sfera
-    const geometry = new THREE.SphereGeometry(1, 30, 90);
-    const material = new THREE.MeshPhongMaterial({ color: 0xB3A288, transparent: true, opacity: 0.8 });
+    const geometry = new THREE.SphereGeometry(1, 30, 360);
+    const material = new THREE.MeshPhongMaterial({ color: 0xB3A288 });
     const textureLoader = new THREE.TextureLoader();
     const texture = textureLoader.load(texturePlanet);
     material.map = texture;
@@ -202,7 +154,7 @@ function planet(texturePlanet, element) {
     function animate() {
         requestAnimationFrame(animate);
         sphere.rotation.x += 0.01;
-        sphere.rotation.y += 0.01;
+        sphere.rotation.y += 0.012;
         renderer.render(scene, camera);
     }
 
@@ -236,7 +188,7 @@ function planet(texturePlanet, element) {
 
 
 import { AmbientLight, Material } from 'three';
-import * as textures from '../../public/images/solar_sistem/index.js'; 
+import * as textures from '../../public/images/solar_sistem/index.js';
 //ho importato tutta la logica sopra in un index js presente dentro la cartella solar_sistem
 
 
@@ -254,7 +206,7 @@ function createPlanetsRotation() {
 
     const solarSystem = document.getElementById('solar_sistem');
     const Width = solarSystem.offsetWidth
-    const Height = 800
+    const Height = 600
 
     //creating a camera instance
     const camera = new THREE.PerspectiveCamera(
@@ -280,7 +232,7 @@ function createPlanetsRotation() {
     //setting up orbit control
 
     //  const orbit = new OrbitControls(camera, renderer.domElement);
-    camera.position.set(0, 40, 250);
+    camera.position.set(0, 50, 250);
     //  orbit.update();
 
     //seting up light
@@ -382,6 +334,8 @@ function createPlanetsRotation() {
     //setting window size
 
     window.addEventListener('resize', function () {
+        console.log('solar_sistme_width', solarSystem.offsetWidth);
+        console.log(window.innerWidth, 'width', window.innerHeight, 'height');
         camera.aspect = window.innerWidth / window.innerHeight;
         camera.updateProjectionMatrix();
         renderer.setSize(window.innerWidth, window.innerHeight);
@@ -389,6 +343,5 @@ function createPlanetsRotation() {
 
 
 }
-
 
 

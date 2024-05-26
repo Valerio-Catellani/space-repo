@@ -18,7 +18,6 @@
 <body>
     @include('partials.header')
 
-
     <div class="bg"></div>
     <div class="star-field">
         <div class="layer"></div>

@@ -6,8 +6,8 @@
                     <div class="single-cta">
                         <i class="fas fa-map-marker-alt"></i>
                         <div class="cta-text">
-                            <h4>Find us</h4>
-                            <span>1010 Avenue, sw 54321, chandigarh</span>
+                            <h4 class="fs-2">Find us</h4>
+                            <span class="fs-5">Boolean City, 564985 adress, Mars</span>
                         </div>
                     </div>
                 </div>
@@ -15,8 +15,8 @@
                     <div class="single-cta">
                         <i class="fas fa-phone"></i>
                         <div class="cta-text">
-                            <h4>Call us</h4>
-                            <span>9876543210 0</span>
+                            <h4 class="fs-2">Call us</h4>
+                            <span class="fs-5">+567 9087 976 076</span>
                         </div>
                     </div>
                 </div>
@@ -24,8 +24,8 @@
                     <div class="single-cta">
                         <i class="far fa-envelope-open"></i>
                         <div class="cta-text">
-                            <h4>Mail us</h4>
-                            <span>mail@info.com</span>
+                            <h4 class="fs-2">Mail us</h4>
+                            <span class="fs-5">Boolean@info.com</span>
                         </div>
                     </div>
                 </div>
@@ -36,7 +36,7 @@
                 <div class="col-xl-4 col-lg-4 mb-50">
                     <div class="footer-widget">
                         <div class="footer-logo">
-                            <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid"
+                            <a href="{{ route('home') }}"><img src="/images/header_logo-removebg.png" class="img-fluid"
                                     alt="logo"></a>
                         </div>
                         <div class="footer-text">

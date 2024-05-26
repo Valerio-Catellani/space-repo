@@ -9,10 +9,10 @@
         <div class="container px-5">
             <div class="d-flex justify-content-center ">
                 <h2 class="py-4 hype-text-shadow">Viaggio {{ $journey->pianeta_di_partenza }} -
-                    {{ $journey->pianeta_di_destinazione }}</h2>
+                    {{ $journey->pianeta_di_destinazione }} - {{ $journey->id }}</h2>
             </div>
-            <h3>{{ $journey->azienda }}</h3>
-            <h4 class="journey-description fs-2">Descrizione Viaggio</h4>
+            <h3 class="journey-description fs-1">{{ $journey->nome_azienda }} - {{ $journey->codice_astronave }}</h3>
+            <h4 class="journey-description fs-2 mt-5">Descrizione Viaggio</h4>
             <p class="journey-description">
                 {{ $journey->descrizione_viaggio }}. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, sunt
                 dolor iure consequatur animi culpa labore, eaque quidem fugit minima accusantium illum distinctio magni

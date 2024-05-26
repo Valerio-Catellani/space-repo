@@ -1,4 +1,4 @@
-<header>
+<header class="hype-shadow-white ">
     <nav id='hype-custom-nav'
         class="fixed-header container d-flex margin-x-auto rounded-4 align-items-center justify-content-between">
         <div class="d-flex p-1">
@@ -22,7 +22,7 @@
             </div>
         </div>
         <div class="user-account gap-3 d-flex fs-3 align-self-stretch align-items-end">
-            <div id='hype-nav-search-button' class="icon-container rounded-top-2" role="button">
+            <div id='hype-nav-search-button' class="icon-container hype-unselectable rounded-top-2" role="button">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
             <div id='hype-nav-login-button' class="icon-container rounded-top-2" role="button">
