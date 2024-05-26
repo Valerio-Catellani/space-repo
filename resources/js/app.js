@@ -7,7 +7,7 @@ import.meta.glob([
 
 // script for animated
 import * as THREE from 'three';
-// import simpleParallax from 'simple-parallax-js';
+import simpleParallax from 'simple-parallax-js';
 
 
 class HypeNav {
@@ -94,8 +94,25 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Esegui l'animazione della sfera solo sulla pagina specifica
-    if (document.getElementById('animated')) {
+    if (document.getElementById('main-home')) {
         const container = document.getElementById('animated');
+        //script per animazioni parallax
+        const aboutUs = document.getElementsByClassName('parallax');
+        new simpleParallax(aboutUs, {
+            overflow: true,
+            orientation: 'right',
+            scale: '1.8',
+            maxTransition: 50,
+            transition: 'cubic-bezier(0,0,0,2)'
+        });
+        const offers = document.getElementsByClassName('parallax2');
+        new simpleParallax(offers, {
+            overflow: true,
+            orientation: 'left',
+            scale: '1.8',
+            maxTransition: 40,
+            transition: 'cubic-bezier(0,0,0,2)'
+        });
         planet('/images/solar_sistem/earth.jpg', container);
     }
 

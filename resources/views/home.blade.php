@@ -5,7 +5,7 @@
 
 @section('content')
     @include('partials.jumbo')
-    <main>
+    <main id='main-home'>
         <section id="about_us" class="parallax">
             <div class="container">
                 <div class="row">
