@@ -6,3 +6,9 @@ $text-primary-color: black;
 $shadow-primary-color: black;
 $background-secondary-color: green;
 $background-primary-color: blue;
+
+$background-gradient: linear-gradient(
+    356deg,
+    rgba(194, 196, 201, 1) 0%,
+    rgba(0, 0, 0, 1) 67%
+);
