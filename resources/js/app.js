@@ -120,8 +120,8 @@ function planet(texturePlanet, element) {
     const scene = new THREE.Scene();
 
     // Aggiungiamo una sfera
-    const geometry = new THREE.SphereGeometry(1, 30, 360);
-    const material = new THREE.MeshPhongMaterial({ color: 0xB3A288 });
+    const geometry = new THREE.SphereGeometry(1, 30, 90);
+    const material = new THREE.MeshPhongMaterial({ color: 0xB3A288, opacity: 0.8 });
     const textureLoader = new THREE.TextureLoader();
     const texture = textureLoader.load(texturePlanet);
     material.map = texture;
