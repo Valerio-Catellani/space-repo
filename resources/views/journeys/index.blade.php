@@ -4,8 +4,8 @@
 
 
 @section('content')
-    <div id="solar_sistem">
-    </div>
+    <div id="solar_sistem"></div>
+    <div id="Show_solar_sistem" role="button" style="position: relative; bottom: 50px; left: 90%">Show Solar Sistem</div>
     <main>
 
         <div class="container hype-unselectable">

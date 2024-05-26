@@ -232,11 +232,12 @@ function planet(texturePlanet, element) {
 
 
 
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+// import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 
 import { AmbientLight, Material } from 'three';
-import * as textures from '../../public/images/solar_sistem/index.js'; //ho importato tutta la logica sopra in un index js presente dentro la cartella solar_sistem
+import * as textures from '../../public/images/solar_sistem/index.js'; 
+//ho importato tutta la logica sopra in un index js presente dentro la cartella solar_sistem
 
 
 
@@ -253,11 +254,11 @@ function createPlanetsRotation() {
 
     const solarSystem = document.getElementById('solar_sistem');
     const Width = solarSystem.offsetWidth
-    const Height = 700
+    const Height = 800
 
     //creating a camera instance
     const camera = new THREE.PerspectiveCamera(
-        45,
+        75,
         Width / Height,
         0.1, 1000
     );
@@ -278,9 +279,9 @@ function createPlanetsRotation() {
 
     //setting up orbit control
 
-    const orbit = new OrbitControls(camera, renderer.domElement);
-    camera.position.set(-90, 140, 140);
-    orbit.update();
+    //  const orbit = new OrbitControls(camera, renderer.domElement);
+    camera.position.set(0, 40, 250);
+    //  orbit.update();
 
     //seting up light
     const ambientLight = new THREE.AmbientLight(0x333333);
@@ -388,3 +389,6 @@ function createPlanetsRotation() {
 
 
 }
+
+
+
