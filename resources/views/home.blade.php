@@ -6,39 +6,43 @@
 @section('content')
     @include('partials.jumbo')
     <main id='main-home'>
-        <section id="about_us" class="parallax">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-6 d-flex flex-column justify-content-center p-3">
-                        <h2 class="py-4">About us
-                        </h2>
-                        <p class="py-4">
-                            BoolXTravell è stata fondata nel 2030 da un gruppo di visionari, scienziati e ingegneri
-                            spaziali. <strong>La nostra missione è semplice</strong>: rendere lo spazio accessibile a tutti.
-                            Siamo convinti che l’esplorazione spaziale <strong>non debba essere riservata solo</strong> agli
-                            astronauti, ma debba essere aperta a chiunque abbia la curiosità di scoprire nuovi mondi,
-                            incontrare civiltà aliene e ammirare la bellezza delle stelle.
-                        </p>
-                    </div>
-                    <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center p-3">
-                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="/images/italia-nello-spazio.avif" class="d-block w-100 h-100 "
-                                        alt="italy-in-space">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="/images/img-1.jpg" class="d-block w-100 h-100" alt="jwt">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="/images/img-2.jpg" class="d-block w-100 h-100 " alt="interstellar">
+        <div class="container overflow-hidden">
+            <section id="about_us" class="parallax">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 d-flex flex-column justify-content-center p-3">
+                            <h2 class="py-4">About us
+                            </h2>
+                            <p class="py-4">
+                                BoolXTravell è stata fondata nel 2030 da un gruppo di visionari, scienziati e ingegneri
+                                spaziali. <strong>La nostra missione è semplice</strong>: rendere lo spazio accessibile a
+                                tutti.
+                                Siamo convinti che l’esplorazione spaziale <strong>non debba essere riservata solo</strong>
+                                agli
+                                astronauti, ma debba essere aperta a chiunque abbia la curiosità di scoprire nuovi mondi,
+                                incontrare civiltà aliene e ammirare la bellezza delle stelle.
+                            </p>
+                        </div>
+                        <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center p-3">
+                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="/images/italia-nello-spazio.avif" class="d-block w-100 h-100 "
+                                            alt="italy-in-space">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/images/img-1.jpg" class="d-block w-100 h-100" alt="jwt">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="/images/img-2.jpg" class="d-block w-100 h-100 " alt="interstellar">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
         <section id="offers">
             <div class="container">
                 <div class="row">
@@ -101,10 +105,7 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="10000">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Davide Alovisio</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
-                            </div>
+                            <img src="..." class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Davide Alovisio</h5>
                                 <p>Some representative placeholder content for the first slide.</p>

@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function () {
             overflow: true,
             orientation: 'left',
             scale: '1.8',
-            maxTransition: 40,
+            maxTransition: 50,
             transition: 'cubic-bezier(0,0,0,2)'
         });
         planet('/images/solar_sistem/earth.jpg', container);
@@ -180,28 +180,9 @@ function planet(texturePlanet, element) {
 
 }
 
-//script per animazioni parallax
-// const aboutUs = document.getElementsByClassName('parallax');
-// new simpleParallax(aboutUs, {
-//     overflow: true,
-//     orientation: 'right',
-//     scale: '1.8',
-//     maxTransition: 50,
-//     transition: 'cubic-bezier(0,0,0,2)'
-// });
-
-// const offers = document.getElementsByClassName('parallax2');
-// new simpleParallax(offers, {
-//     overflow: true,
-//     orientation: 'left',
-//     scale: '1.8',
-//     maxTransition: 40,
-//     transition: 'cubic-bezier(0,0,0,2)'
-// });
 
 
 
-// import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 
 import { AmbientLight, Material } from 'three';
